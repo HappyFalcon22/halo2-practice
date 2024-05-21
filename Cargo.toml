@@ -1,0 +1,23 @@
+[package]
+name = "halo-practice"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "practice"
+path = "src/lib.rs"
+
+[dependencies]
+halo2_proofs = { git = "https://github.com/orochi-network/halo2", tag = "v0_0_2" }
+halo2curves = { git = "https://github.com/privacy-scaling-explorations/halo2curves", tag = "0.3.2" }
+halo2_gadgets = { git = "https://github.com/privacy-scaling-explorations/halo2", tag = "v2023_02_02" }
+plotters = { version = "0.3.0", optional = true }
+tabbycat = { version = "0.1", features = ["attributes"], optional = true }
+eth-types = { git = "https://github.com/privacy-scaling-explorations/zkevm-circuits", rev = "37b8aca" }
+num-bigint = "0.4.3"
+hex = "0.4.3"
+arrayvec = "0.7.2"
+gadgets = { git = "https://github.com/privacy-scaling-explorations/zkevm-circuits", rev = "37b8aca" }
+rand = "0.8"
+ff = "0.13.0"
+group = "0.13.0"
